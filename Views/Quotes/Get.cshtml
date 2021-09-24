@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Quote>
+
+@foreach(Quote q in Model)
+            {
+                <h1> @q.Id</h1>
+                <h1> @q.Title</h1>
+                <h1>@q.Description</h1>
+                <h1>@q.Author</h1>
+                <h1>@q.CreatedAt</h1>
+                <h1>@q.Type</h1>
+            }
